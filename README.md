@@ -1,7 +1,9 @@
+# Instructions
 1. To get all employees use "localhost:8080/employees"
 2. To get one employee by Id use "localhost:8080/employees/{id}", where "{id}" is going to be replace by the Id of the employee, that is a integer number from 1 to n.
 3. To get just the anual salary of one employee by Id use "localhost:8080/employee/{id}/anual-salary", where "{id}" is going to be replace by the Id of the employee, that is a integer number from 1 to n.
-4. To add this data using the "localhost:8080/new-employee", you can use postman.
+4. To add data to the database use this "localhost:8080/new-employee", you must add one by one use postman for this matter.
+```json
 {
 "employee_name": "Garrett Winters",
 "employee_salary": 170750,
@@ -140,3 +142,4 @@
 "employee_age": 23,
 "profile_image": ""
 }
+```
