@@ -42,7 +42,16 @@ public class EmployeeController {
 	
 	@GetMapping("/employee/{id}")
 	public Optional<Employee> findOne(@PathVariable Integer id) {
+		Integer monthSalary;
+		Integer anualSalary;
+		
 		Optional<Employee> empl = emplService.findById(id);
+		
+		if(empl.isPresent()) {
+			monthSalary = empl.get().getEmployee_salary();
+			anualSalary = anualSalaryEjb.anualSalaryCalculator(monthSalary);
+			empl.get().setEmployee_anual_salary(anualSalary);
+		}
 		return empl;
 	}
 	
