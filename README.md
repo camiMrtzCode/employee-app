@@ -1,8 +1,9 @@
 # Instructions
 1. To get all employees use "localhost:8080/employees"
 2. To get one employee by Id use "localhost:8080/employees/{id}", where "{id}" is going to be replace by the Id of the employee, that is a integer number from 1 to n.
-3. To get just the anual salary of one employee by Id use "localhost:8080/employee/{id}/anual-salary", where "{id}" is going to be replace by the Id of the employee, that is a integer number from 1 to n.
-4. To add data to the database use this "localhost:8080/new-employee", you must add one by one use postman for this matter.
+3. Ensure that in "http://localhost:8080/h2-console" the JDBC URL is set to: "jdbc:h2:mem:employee".
+4. To get just the anual salary of one employee by Id use "localhost:8080/employee/{id}/anual-salary", where "{id}" is going to be replace by the Id of the employee, that is a integer number from 1 to n.
+5. To add data to the database use this "localhost:8080/new-employee", you must add one by one, use postman for this matter.
 ```json
 {
 "employee_name": "Garrett Winters",
