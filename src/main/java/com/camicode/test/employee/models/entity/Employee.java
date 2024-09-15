@@ -1,4 +1,4 @@
-package com.camicode.siitest.employee.models.entity;
+package com.camicode.test.employee.models.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

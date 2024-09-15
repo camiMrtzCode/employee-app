@@ -1,4 +1,4 @@
-package com.camicode.siitest.employee.controller;
+package com.camicode.test.employee.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.camicode.siitest.employee.models.entity.Employee;
-import com.camicode.siitest.employee.models.jpa.EmployeeRepository;
-import com.camicode.siitest.employee.models.service.AnualSalaryCalculatorService;
+import com.camicode.test.employee.models.entity.Employee;
+import com.camicode.test.employee.models.jpa.EmployeeRepository;
+import com.camicode.test.employee.models.service.AnualSalaryCalculatorService;
 
 @RestController
 public class EmployeeController {

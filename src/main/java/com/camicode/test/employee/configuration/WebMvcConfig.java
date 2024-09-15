@@ -1,4 +1,4 @@
-package com.camicode.siitest.employee.configuration;
+package com.camicode.test.employee.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
